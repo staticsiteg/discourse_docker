@@ -139,7 +139,7 @@ RUN useradd discourse -s /bin/bash -m -U &&\
     cd /var/www &&\
     git clone https://github.com/discourse/discourse.git &&\
     cd discourse &&\
-    git remote set-branches --add origin tests-passed &&\
+    git remote set-branches --add origin v2.3.3 &&\
     chown -R discourse:discourse /var/www/discourse &&\
     cd /var/www/discourse &&\
     sudo -u discourse bundle install --deployment --jobs 4 --without test development &&\
